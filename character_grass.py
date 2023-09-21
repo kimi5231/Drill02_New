@@ -16,7 +16,7 @@ cx, cy, r = 400, 300, 200
 def run_circle():
     print('CIRCLE')
 
-    for deg in range(0, 360, 5):
+    for deg in range(270, 630, 5):
         x = cx + r*math.cos(math.radians(deg))
         y = cy + r*math.sin(math.radians(deg))
         render_frame(x, y)
@@ -37,14 +37,14 @@ def run_rectangle():
         #render_frame(750, y)
 
     #left line
-    for y in range(550, 90-1, -5):
-        render_frame(50, y)
+    #for y in range(550, 90-1, -5):
+        #render_frame(50, y)
 
 
 
 while True:
-    #run_circle()
-    run_rectangle()
+    run_circle()
+    #run_rectangle()
     break
 
 close_canvas()
